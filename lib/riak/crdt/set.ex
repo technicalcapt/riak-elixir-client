@@ -23,7 +23,7 @@ defmodule Riak.CRDT.Set do
   @doc """
   Checks if `set` contains `value`.
   """
-  def member?(set, value) when Record.is_record(set, :set) and is_binary(value) do
+  def member?(set, value) when Record.is_record(set, :set) and is_map(value) do
     :riakc_set.is_element(value, set)
   end
   def member?(nil, _), do: {:error, :nil_object}
@@ -31,7 +31,7 @@ defmodule Riak.CRDT.Set do
   @doc """
   Insert `value` on `set`
   """
-  def put(set, value) when Record.is_record(set, :set) and is_binary(value) do
+  def put(set, value) when Record.is_record(set, :set) and is_map(value) do
     :riakc_set.add_element(value, set)
   end
   def put(nil, _), do: {:error, :nil_object}
@@ -39,7 +39,7 @@ defmodule Riak.CRDT.Set do
   @doc """
   Delete `value` on `set`
   """
-  def delete(set, value) when Record.is_record(set, :set) and is_binary(value) do
+  def delete(set, value) when Record.is_record(set, :set) and is_map(value) do
     :riakc_set.del_element(value, set)
   end
   def delete(nil, _), do: {:error, :nil_object}

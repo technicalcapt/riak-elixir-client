@@ -1,9 +1,9 @@
-%{"earmark": {:hex, :earmark, "0.1.19"},
-  "ex_doc": {:hex, :ex_doc, "0.10.0"},
-  "hamcrest": {:hex, :hamcrest, "0.1.1"},
-  "linguist": {:hex, :linguist, "0.1.5"},
-  "meck": {:hex, :meck, "0.8.3"},
-  "pooler": {:hex, :pooler, "1.5.0"},
-  "protobuffs": {:hex, :protobuffs, "0.8.2"},
-  "riak_pb": {:hex, :riak_pb, "2.1.0"},
-  "riakc": {:hex, :riakc, "2.1.1"}}
+%{"earmark": {:hex, :earmark, "0.1.19", "ffec54f520a11b711532c23d8a52b75a74c09697062d10613fa2dbdf8a9db36e", [:mix], []},
+  "ex_doc": {:hex, :ex_doc, "0.10.0", "f49c237250b829df986486b38f043e6f8e19d19b41101987f7214543f75947ec", [:mix], [{:earmark, "~> 0.1.17 or ~> 0.2", [hex: :earmark, optional: true]}]},
+  "hamcrest": {:hex, :hamcrest, "0.1.1", "b2a6fd665502ccb22c033d95215981594b2c0d3a699fb3a321c9896e73fde14d", [:rebar, :make], []},
+  "linguist": {:hex, :linguist, "0.1.5", "98739fc47ac5d951322a57c787f46786c95b53d800105d43a0631633e7f9da9b", [:mix], []},
+  "meck": {:hex, :meck, "0.8.3", "4628a1334c69610c5bd558b04dc78d723d8ec5445c123856de34c77f462b5ee5", [:rebar], []},
+  "pooler": {:hex, :pooler, "1.5.0", "0fd4be5d2976e6a2e9a1617623031758c26f200c1fca89e4a3c542747bec6371", [:rebar, :make], []},
+  "protobuffs": {:hex, :protobuffs, "0.8.2", "5346c28ccc1637e5ff03270b039b7e87c66b21c666f91ba22635c1fd1002c822", [:rebar, :make], [{:meck, "~> 0.8.3", [hex: :meck, optional: false]}]},
+  "riak_pb": {:hex, :riak_pb, "2.1.0", "478c717e097c79f946d190f7653a228dd874b0e13258619e9a610071f3a9b731", [:rebar, :make], [{:protobuffs, "~> 0.8", [hex: :protobuffs, optional: false]}, {:hamcrest, "~> 0.1", [hex: :hamcrest, optional: false]}]},
+  "riakc": {:hex, :riakc, "2.1.1", "908f63c05a20b31da778f3450bc1cf3cb85166941c473309ef183192292cc074", [:rebar, :make], [{:riak_pb, "~> 2.1", [hex: :riak_pb, optional: false]}]}}
